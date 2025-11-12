@@ -10,7 +10,7 @@ async function start() {
 		console.log('✅ Conexión a Postgres OK');
 
 		// En desarrollo: crea/actualiza tablas automáticamente
-		await sequelize.sync({ alter: true, force: false });
+		await sequelize.sync({ alter: true });
 		console.log('✅ Sincronización de modelos OK');
 
 		app.listen(PORT, () => {
