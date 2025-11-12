@@ -32,7 +32,7 @@ router.get('/dev/code', devGetCodeByEmail);
 router.get('/me', authenticate, me);
 router.get('/', authenticate, listUsers);
 router.get('/:id', authenticate, getUser);
-router.delete('/:id', authenticate, removeUser);
+router.delete('/:id', removeUser);
 router.put('/:id', authenticate, updateUser);
 
 export default router;
