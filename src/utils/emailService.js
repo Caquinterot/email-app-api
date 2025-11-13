@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 	},
 	tls: {
 		//Evita "self-signed certificate in certificate chain" en dev
-		rejectUnauthorized: false,
+		rejectUnauthorized: true,
 	},
 });
 
